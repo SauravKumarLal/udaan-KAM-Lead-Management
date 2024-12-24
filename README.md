@@ -27,7 +27,8 @@
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/SauravKumarLal/udaan-KAM-Lead-Management.git
-   cd backend
+   cd udaan-KAM-Lead-Management
+
    ```
 
 2. **Install Dependencies**:
