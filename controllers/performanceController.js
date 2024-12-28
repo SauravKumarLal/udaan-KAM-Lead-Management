@@ -11,7 +11,7 @@ export const getPerformanceMetrics = async (req, res) => {
 
 export const updatePerformanceMetrics = async (req, res) => {
   try {
-    const performance = await Performance.findOneAndUpdate(
+    const performance = await Performance.findOneAndUpdate(  
       { lead: req.params.leadId },
       req.body,
       { new: true, upsert: true } // Create if doesn't exist

@@ -14,7 +14,7 @@ export const authenticateToken = (req, res, next) => {
         req.user = decoded; // Attach user info to request object
         next();
     } catch (err) {
-        res.status(400).json({ message: 'Invalid token.' });
+        res.status(400).json({ message: 'Invalid token.' }); 
     }
 };
 

@@ -6,7 +6,7 @@ import {
 } from '../controllers/interactionController.js';
 import { authenticateToken } from '../middlewares/auth.js';
 
-const router = express.Router();
+const router = express.Router();   
 
 // Add a new interaction
 router.post('/', authenticateToken, addInteraction);
