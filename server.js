@@ -11,16 +11,27 @@ import performanceRoutes from './routes/performanceRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 
 dotenv.config();
+
+if (!process.env.JWT_SECRET || !process.env.MONGO_URI) {
+    console.error('Error: Missing required environment variables.');
+    process.exit(1);
+}
+
 const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
-
+app.use(cors({
+    origin: 'http://localhost:5173', // Your frontend's origin
+}));
 // Connect Database
 connectDB();
 
 // Routes
+app.get('/', (req, res) => {
+    res.send('Welcome to Key Account Manager (KAM) Lead Management System. I am Saurav Kumar Lal and happy to say that API is running... :)');
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/leads', leadRoutes);
 app.use('/api/interactions', interactionRoutes);

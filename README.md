@@ -1,34 +1,36 @@
-# Key Account Manager (KAM) Lead Management System
+# Key Account Manager (KAM) Lead Management System ✨✨✨
 
-## Project Overview
-- The **KAM Lead Management System** is a comprehensive solution designed for managing leads, interactions, and performance metrics in the B2B e-commerce space. 
-- Built using the MERN stack, this system allows Key Account Managers (KAMs) to efficiently manage restaurant accounts, track interactions, plan follow-ups, and identify underperforming accounts. 
-- The project emphasizes secure access using JWT-based authentication and provides robust error handling.
+## Project Overview 🎯
+- The **KAM Lead Management System** is a comprehensive solution designed for managing leads, interactions, and performance metrics in the B2B e-commerce space.
+- Built using the MERN stack, this system allows Key Account Managers (KAMs) to efficiently manage restaurant accounts, track interactions, plan follow-ups, and identify underperforming accounts.
+- The project emphasizes secure access using JWT-based authentication, robust error handling, and modular architecture for scalability and maintainability. 🚀
+
+### Demo Video 🎥
+- Watch the demo video here: [KAM Lead Management System Demo](https://drive.google.com/file/d/1EoW0pH4uIw0YL6i2JVbVme719uhq-sQb/view?usp=sharing)
 
 ---
 
-## System Requirements
+## System Requirements 💻
 
-### Hardware:
+### Hardware 🛠️
 - Minimum 4 GB RAM (8 GB recommended)
 - Dual-core processor
-- Stable internet connection
+- Stable internet connection 📡
 
-### Software:
+### Software 🧑‍💻
 - Node.js (v16 or higher)
 - npm (v8 or higher)
 - MongoDB Atlas (or a local MongoDB installation)
-- Postman (for API testing)
+- Postman (for API testing) ✉️
 
 ---
 
-## Installation Instructions
+## Installation Instructions ⚙️
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/SauravKumarLal/udaan-KAM-Lead-Management.git
    cd udaan-KAM-Lead-Management
-
    ```
 
 2. **Install Dependencies**:
@@ -48,41 +50,40 @@
 
 4. **Connect to MongoDB**:
    - Use MongoDB Atlas or a local MongoDB instance.
-   - Ensure the connection string in the `MONGO_URI` variable is correct.
+   - Ensure the connection string in the `MONGO_URI` variable is correct. 🌐
 
 ---
 
-## Running Instructions
+## Running Instructions 🏃‍♂️
 
 1. **Start the Server**:
    ```bash
    npm run dev
    ```
-   
-   The server will start at `http://localhost:5000`.
+   The server will start at `http://localhost:5000`. 🔗
 
 2. **Verify the Server**:
    - Open a browser or Postman and make a `GET` request to `http://localhost:5000`.
-   - You should see a response confirming the server is running.
+   - You should see a response confirming the server is running. ✅
 
 ---
 
-## Test Execution Guide
+## Test Execution Guide 🔎
 
 1. **Authentication**:
    - Use Postman to test endpoints under `/api/auth` for user registration and login.
-   - Copy the JWT token received after login for subsequent API calls.
+   - Copy the JWT token received after login for subsequent API calls. 🔒
 
 2. **Protected Routes**:
    - Add the JWT token to the `Authorization` header in the format `Bearer <token>`.
-   - Test CRUD operations for leads, interactions, restaurants, and performance tracking.
+   - Test CRUD operations for leads, interactions, restaurants, and performance tracking. 📁
 
 3. **Error Handling**:
-   - Test with invalid data (e.g., missing required fields, expired token) to ensure proper error responses.
+   - Test with invalid data (e.g., missing required fields, expired token) to ensure proper error responses. ⚠️
 
 ---
 
-## API Documentation
+## API Documentation 📄
 
 ### Authentication
 - **POST /api/auth/register**: Register a new user.
@@ -115,16 +116,16 @@
 
 ---
 
-## Sample Usage Examples
+## Sample Usage Examples 📑
 
 ### 1. **Register a User**
 - **Endpoint**: `POST /api/auth/register`
 - **Request Body**:
   ```json
   {
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "password": "password123",
+    "name": "Himanshu K",
+    "email": "himanshuk@gmail.com",
+    "password": "himanshu123",
     "role": "user"
   }
   ```
@@ -140,8 +141,8 @@
 - **Request Body**:
   ```json
   {
-    "email": "john.doe@example.com",
-    "password": "password123"
+    "email": "himanshuk@gmail.com",
+    "password": "himanshu123"
   }
   ```
 - **Response**:
@@ -162,8 +163,8 @@
 - **Request Body**:
   ```json
   {
-    "name": "Restaurant A",
-    "contactInfo": ["1234567890", "contact@example.com"],
+    "name": "Zaitoon",
+    "contactInfo": ["99346201**", "zaitoon@gmail.com"],
     "status": "New",
     "callFrequency": 7
   }
@@ -172,8 +173,8 @@
   ```json
   {
     "_id": "64a7d5c2d02c982abc123456",
-    "name": "Restaurant A",
-    "contactInfo": ["1234567890", "contact@example.com"],
+    "name": "Zaitoon",
+    "contactInfo": ["99346201**", "zaitoon@gmail.com"],
     "status": "New",
     "callFrequency": 7,
     "interactions": [],
@@ -194,8 +195,8 @@
   [
     {
       "_id": "64a7d5c2d02c982abc123456",
-      "name": "Restaurant A",
-      "contactInfo": ["1234567890", "contact@example.com"],
+      "name": "Zaitoon",
+      "contactInfo": ["99346201**", "zaitoon@gmail.com"],
       "status": "In Progress",
       "callFrequency": 7,
       "lastCallDate": "2024-12-17T00:00:00.000Z",
@@ -203,6 +204,30 @@
     }
   ]
   ```
+
+---
+
+## Future Enhancements 🔮
+
+1. **Advanced Analytics**:
+   - Include dashboards for tracking lead performance and trends. 📊
+2. **Notifications**:
+   - Add email or SMS reminders for scheduled calls. 🔔
+3. **Frontend Integration**:
+   - Build a responsive frontend using React.js or Angular. 🖥️
+4. **Role Management**:
+   - Extend role-based access control with more granular permissions. 🔑
+5. **Deployment**:
+   - Deploy the system on a cloud platform like AWS or Heroku for accessibility. ☁️
+
+---
+
+## Contact Information 📞
+
+- **Developer**: Saurav Kumar Lal
+- **Email**: sauravkrlal@gmail.com
+- **Phone**: 6202830461
+- **GitHub**: [Github Link](https://github.com/SauravKumarLal)
 
 ---
 
